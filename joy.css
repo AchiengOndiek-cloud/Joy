@@ -201,13 +201,13 @@ nav{position:sticky;top:0;z-index:200;background:#000;backdrop-filter:blur(12px)
 .blog-empty p{font-size:14px;color:var(--muted)}
 
 /* ========== PILLAR PAGES ========== */
-.pillar-hero{background:var(--cream);border-bottom:1px solid var(--border);padding:60px 0}
-.pillar-hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:52px;align-items:center}
-.pillar-hero h1{font-size:42px;font-weight:600;line-height:1.1;margin:12px 0 14px}
-.pillar-tagline{font-size:16px;font-weight:500;color:var(--forest);margin-bottom:12px;display:block}
-.pillar-hero p{font-size:15px;color:var(--muted);line-height:1.75;margin-bottom:26px}
-.pillar-img{height:300px;border-radius:22px;overflow:hidden}
-.pillar-img img{width:100%;height:100%;object-fit:cover}
+.pillar-hero{background:var(--cream);border-bottom:1px solid var(--border);padding:26px 0 18px}
+.pillar-hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:22px 32px;align-items:center}
+.pillar-hero h1{font-size:42px;font-weight:600;line-height:1.08;margin:8px 0 10px}
+.pillar-tagline{font-size:16px;font-weight:500;color:var(--forest);margin-bottom:10px;display:block}
+.pillar-hero p{font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:14px}
+.pillar-img{height:300px;border-radius:22px;overflow:hidden;display:flex;align-items:stretch;justify-content:center}
+.pillar-img img{width:100%;height:100%;object-fit:cover;object-position:center}
 
 .features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .feature-card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:22px}
@@ -370,7 +370,7 @@ footer{background:#0f1f0f;color:#fff;margin-top:80px}
   .dark-band-grid{grid-template-columns:1fr;gap:32px}
   .dark-band-imgs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 
-  .pillar-hero-grid{grid-template-columns:1fr;gap:28px}
+  .pillar-hero-grid{grid-template-columns:1fr;gap:20px}
   .pillar-img{height:220px}
 
   .about-hero-grid{grid-template-columns:1fr;gap:28px}
@@ -399,6 +399,7 @@ footer{background:#0f1f0f;color:#fff;margin-top:80px}
 
   .section-title,.hero h1{font-size:30px}
   .pillar-hero h1,.about-hero-grid h1,.contact-info h1{font-size:28px}
+  .pillar-hero{padding:18px 0 12px}
   .about-why{padding:28px}
   .about-founder-card{padding:24px}
 
