@@ -689,6 +689,32 @@ const LINKEDIN_POSTS = [
   {title:"Handling Tomorrow's Nutrition Uncertainty",body:"Climate change, supply chain disruptions and rising food prices are reshaping what sustainable eating looks like. Joy explores how individuals, families and communities can build nutritional resilience in an uncertain food future.",pillar:"charity",author:"Joy Achieng",excerpt:"Sustainable eating isn't just about the environment; it's about ensuring food security for tomorrow.",linkedin:"https://www.linkedin.com/posts/joy-licensednutritionist_sustainableeating-foodsecurity-nutritioninnovation-activity-7386672588107841537-NLnE",date:"2025-05-02T10:00:00Z"}
 ];
 
+const BLOG_COVER_MAP = {
+  "Health and the Gut-Brain Axis": "joyimages/blog/19-gut-brain-axis.jpg",
+  "Understanding Your Gut Microbiome": "joyimages/blog/16-gut-microbiome.jpg",
+  "Peptic Ulcers: Nutrition's Role in Healing": "joyimages/blog/17-peptic-ulcers.jpg",
+  "Traditional Fermented Foods: Mursik, Adila and More": "joyimages/blog/14-mursik-adila-fermented-foods.jpg",
+  "Fibermaxxing: Why Fibre Is the Unsung Hero of Gut Health": "joyimages/blog/04-fibre-gut-health.jpg",
+  "Acid Reflux: What Your Stomach Acid Is Telling You": "joyimages/blog/03-acid-reflux.jpg",
+  "Gum Chewing vs Gut Health: The Sorbitol Problem": "joyimages/blog/11-gum-sorbitol-gut.jpg",
+  "Why Belly Fat Is Always Stubborn": "joyimages/blog/01-belly-fat-stubborn.jpg",
+  "Ozempic and GLP-1: What No One Tells You": "joyimages/blog/02-ozempic-glp1.jpg",
+  "Lemon and Weight Loss: Debunking the Myth": "joyimages/blog/05-lemon-water-weight-loss.jpg",
+  "Weight Loss Myths: Personalizing Evidence-Based Nutrition": "joyimages/blog/07-personalised-nutrition-goals.jpg",
+  "Why Exercise Alone Won't Melt Your Belly Fat": "joyimages/blog/10-exercise-80-20-fat-loss.jpg",
+  "Why Your Weight Gain Efforts May Be Failing": "joyimages/blog/13-weight-gain-mistakes.jpg",
+  "Exercise and Diastasis Recti: What Postpartum Mums Need to Know": "joyimages/blog/15-diastasis-recti.jpg",
+  "Glutes Love the Monkey Business Model": "joyimages/blog/18-glutes-nutrition.jpg",
+  "Calorie Deficit Explained Simply": "joyimages/blog/12-calorie-deficit-explained.jpg",
+  "Poor Man's Food, Rich Man's Disease": "joyimages/blog/09-traditional-foods-real-health.jpg",
+  "Where Old Nutrition Habits Meet Modern Practice": "joyimages/blog/08-old-habits-modern-practice.jpg",
+  "Handling Tomorrow's Nutrition Uncertainty": "joyimages/blog/06-tomorrows-nutrition-charity.jpg"
+};
+
+LINKEDIN_POSTS.forEach(post => {
+  if (!post.cover) post.cover = BLOG_COVER_MAP[post.title] || '';
+});
+
 const ADMIN_PW = "mlohealth2026";
 const PILLAR_COVER_BY_KEY = {
   conditions: 'joyimages/J/therapy.jpeg',
