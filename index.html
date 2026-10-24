@@ -399,36 +399,6 @@
       <button class="filter-btn" onclick="filterBlog('charity',this)">Charity</button>
     </div>
     <div id="blog-all-posts"></div>
-
-    <!-- STAFF PUBLISH -->
-    <div style="margin-top:56px;border-top:1px solid var(--border);padding-top:40px">
-      <div id="post-login-area">
-        <h3 style="font-size:20px;font-weight:600;margin-bottom:8px">Publish a new post</h3>
-        <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Staff only: enter the admin password to publish.</p>
-        <div style="display:flex;gap:10px;max-width:380px;flex-wrap:wrap">
-          <input type="password" id="admin-pw" placeholder="Admin password" style="flex:1;min-width:200px;padding:10px 14px;border:1px solid var(--border);border-radius:10px;font-family:'Inter',sans-serif;font-size:14px;outline:none">
-          <button class="btn btn-dark btn-sm" onclick="checkAdminPw()">Unlock</button>
-        </div>
-        <p id="pw-error" style="font-size:13px;color:#c84a20;margin-top:8px;display:none">Incorrect password.</p>
-      </div>
-      <div id="new-post-form" style="display:none">
-        <h3 style="font-size:20px;font-weight:600;margin-bottom:20px">New post</h3>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px" class="pub-grid">
-          <div class="form-group"><label>Title *</label><input type="text" id="np-title" placeholder="Post title"></div>
-          <div class="form-group"><label>Pillar</label><select id="np-pillar"><option value="wellness">Wellness</option><option value="conditions">Conditions</option><option value="sports">Sports</option><option value="meals">Meals</option><option value="charity">Charity</option></select></div>
-          <div class="form-group"><label>Author</label><input type="text" id="np-author" value="Joy Achieng"></div>
-          <div class="form-group"><label>Cover image URL (optional)</label><input type="text" id="np-cover" placeholder="https://..."></div>
-          <div class="form-group"><label>LinkedIn URL (optional)</label><input type="text" id="np-linkedin" placeholder="https://linkedin.com/..."></div>
-          <div class="form-group"><label>Excerpt</label><input type="text" id="np-excerpt" placeholder="1-2 sentence summary..."></div>
-          <div class="form-group" style="grid-column:1/-1"><label>Body *</label><textarea id="np-body" rows="10" placeholder="Write your full post here..."></textarea></div>
-        </div>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <button class="btn btn-dark" onclick="publishPost()">Publish post</button>
-          <button class="btn btn-outline" onclick="document.getElementById('new-post-form').style.display='none'">Cancel</button>
-        </div>
-        <p id="publish-msg" style="font-size:13px;font-weight:600;color:var(--forest);margin-top:10px;display:none">&#x2713; Post published!</p>
-      </div>
-    </div>
   </div></section>
 </div>
 
@@ -690,7 +660,7 @@ const LINKEDIN_POSTS = [
 ];
 
 const BLOG_COVER_MAP = {
-  "Health and the Gut-Brain Axis": "joyimages/blog/19-gut-brain-axis.jpg",
+  "Health and the Gut: Brain Axis": "joyimages/blog/19-gut-brain-axis.jpg",
   "Understanding Your Gut Microbiome": "joyimages/blog/16-gut-microbiome.jpg",
   "Peptic Ulcers: Nutrition's Role in Healing": "joyimages/blog/17-peptic-ulcers.jpg",
   "Traditional Fermented Foods: Mursik, Adila and More": "joyimages/blog/14-mursik-adila-fermented-foods.jpg",
@@ -698,9 +668,9 @@ const BLOG_COVER_MAP = {
   "Acid Reflux: What Your Stomach Acid Is Telling You": "joyimages/blog/03-acid-reflux.jpg",
   "Gum Chewing vs Gut Health: The Sorbitol Problem": "joyimages/blog/11-gum-sorbitol-gut.jpg",
   "Why Belly Fat Is Always Stubborn": "joyimages/blog/01-belly-fat-stubborn.jpg",
-  "Ozempic and GLP-1: What No One Tells You": "joyimages/blog/02-ozempic-glp1.jpg",
+  "Ozempic and GLP1: What No One Tells You": "joyimages/blog/02-ozempic-glp1.jpg",
   "Lemon and Weight Loss: Debunking the Myth": "joyimages/blog/05-lemon-water-weight-loss.jpg",
-  "Weight Loss Myths: Personalizing Evidence-Based Nutrition": "joyimages/blog/07-personalised-nutrition-goals.jpg",
+  "Weight Loss Myths: Personalizing Evidence Based Nutrition": "joyimages/blog/07-personalised-nutrition-goals.jpg",
   "Why Exercise Alone Won't Melt Your Belly Fat": "joyimages/blog/10-exercise-80-20-fat-loss.jpg",
   "Why Your Weight Gain Efforts May Be Failing": "joyimages/blog/13-weight-gain-mistakes.jpg",
   "Exercise and Diastasis Recti: What Postpartum Mums Need to Know": "joyimages/blog/15-diastasis-recti.jpg",
